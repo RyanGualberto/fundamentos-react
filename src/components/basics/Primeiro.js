@@ -4,7 +4,7 @@ export default function Primeiro(){
     return (
         <div>
               <h2> 
-                 Primeiro components
+                 Primeiro componente
               </h2>
               <p>
                 {msg}
