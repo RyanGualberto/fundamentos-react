@@ -7,7 +7,7 @@ export default function ComParametro(props){
                 {props.titulo}
             </h2>
             <h3>
-                Seja bem vindo
+                Seja bem vindoooo
             </h3>
         </div>
     )
