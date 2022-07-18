@@ -6,6 +6,8 @@ import Fragmento from './components/basics/Fragmento';
 import Numero from  './components/basics/NumRandom';
 import FamiliaMembro from './components/basics/FamiliaMembro';
 import Familia from './components/basics/Familia';
+import ListaAlunos from './components/repeticao/ListaAlunos';
+
 
 import './App.css'
 const tag = <h1>Fundamentos react</h1>;
@@ -15,6 +17,9 @@ export default props => {
         <div className='app'>
             { tag }
             <div className='card-group'>
+            <Card titulo="#06 - Repeticao" color="orange">
+                <ListaAlunos></ListaAlunos>
+            </Card>
 
             <Card titulo="#05 - Componente com Filhos" color="pink">
                 <Familia sobrenome="Gualberto">
