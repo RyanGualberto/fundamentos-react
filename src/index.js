@@ -1,17 +1,8 @@
-import  ReactDOM from 'react-dom'
-import React from 'react';
-import Primeiro from './components/basics/Primeiro';
-import ComParametro from './components/basics/ComParametro';
-import Fragmento from './components/basics/Fragmento';
 import './index.css';
-const tag = <h1>Ola</h1>;
+import React from 'react';
+import App from './components/basics/App';
+import ReactDOM from 'react-dom';
 
-const el = document.getElementById("root");
 ReactDOM.render(
-    <div>
-        <Primeiro></Primeiro>
-        <ComParametro titulo="segundo componente"/>
-        <Fragmento/>        
-    </div>,
-    el
-    )
+    <App/>, document.getElementById('root')
+)
