@@ -9,6 +9,7 @@ import Familia from './components/basics/Familia';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProduto from './components/repeticao/TabelaProduto.jsx'
 import ParOuImpar from './components/conditions/ParOuImpar'
+import UsuarioInfo from './components/conditions/UsuarioInfo';
 
 
 import './App.css'
@@ -20,7 +21,12 @@ export default props => {
             { tag }
             <div className='card-group'>
 
-            <Card titulo="#08 - Renderizacao condicional" color="purple">
+            <Card titulo="#08 - Renderizacao condicional: Componente" color="yellow">
+                <UsuarioInfo usuario={{nome: 'Ryan'}}/>
+                <UsuarioInfo usuario={{email: 'Ryan'}}/>
+            </Card>
+
+            <Card titulo="#08 - Renderizacao condicional: Ternario" color="purple">
                 <ParOuImpar numero={21}></ParOuImpar>
             </Card>
 
