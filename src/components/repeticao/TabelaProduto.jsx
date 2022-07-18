@@ -13,12 +13,10 @@ export default props => {
     })
     return (
         <div>
-            <table className="table">
-                <thead>
+            <table className="table">     
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Preco</th>
-                </thead>
                 <tbody>
                   {prodRow}
                 </tbody>

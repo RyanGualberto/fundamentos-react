@@ -8,6 +8,7 @@ import FamiliaMembro from './components/basics/FamiliaMembro';
 import Familia from './components/basics/Familia';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProduto from './components/repeticao/TabelaProduto.jsx'
+import ParOuImpar from './components/conditions/ParOuImpar'
 
 
 import './App.css'
@@ -18,6 +19,10 @@ export default props => {
         <div className='app'>
             { tag }
             <div className='card-group'>
+
+            <Card titulo="#08 - Renderizacao condicional" color="purple">
+                <ParOuImpar numero={21}></ParOuImpar>
+            </Card>
 
             <Card titulo="#07 - Desafio Repeticao" color="gray">
                 <TabelaProduto></TabelaProduto>
