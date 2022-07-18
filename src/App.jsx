@@ -23,7 +23,7 @@ export default props => {
 
             <Card titulo="#08 - Renderizacao condicional: Componente" color="yellow">
                 <UsuarioInfo usuario={{nome: 'Ryan'}}/>
-                <UsuarioInfo usuario={{email: 'Ryan'}}/>
+
             </Card>
 
             <Card titulo="#08 - Renderizacao condicional: Ternario" color="purple">
