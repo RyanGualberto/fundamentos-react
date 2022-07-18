@@ -11,6 +11,7 @@ import TabelaProduto from './components/repeticao/TabelaProduto.jsx'
 import ParOuImpar from './components/conditions/ParOuImpar'
 import UsuarioInfo from './components/conditions/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
 
 
 import './App.css'
@@ -22,10 +23,13 @@ export default props => {
             { tag }
             <div className='card-group'>
 
+            <Card titulo="#10 - Comunicacao Indireta" color="#ef464e">
+                <IndiretaPai></IndiretaPai>
+            </Card>
             <Card titulo="#09 - Comunicacao Direta" color="brown">
                 <DiretaPai></DiretaPai>
             </Card>
-            <Card titulo="#08 - Renderizacao condicional: Componente" color="yellow">
+            <Card titulo="#08 - Renderizacao condicional: Componente" color="#01996f">
                 <UsuarioInfo usuario={{nome: 'Ryan'}}/>
 
             </Card>
