@@ -4,7 +4,9 @@ import Primeiro from './components/basics/Primeiro';
 import ComParametro from './components/basics/ComParametro';
 import Fragmento from './components/basics/Fragmento'; 
 import Numero from  './components/basics/NumRandom';
+import FamiliaMembro from './components/basics/FamiliaMembro';
 import Familia from './components/basics/Familia';
+
 import './App.css'
 const tag = <h1>Fundamentos react</h1>;
 
@@ -15,7 +17,13 @@ export default props => {
             <div className='card-group'>
 
             <Card titulo="#05 - Componente com Filhos" color="pink">
-                <Familia sobrenome="Gualberto"></Familia>
+                <Familia sobrenome="Gualberto">
+                     <FamiliaMembro nome="Ryan " />
+                     <FamiliaMembro nome="Cassio " />
+                     <FamiliaMembro nome="Chris "/>
+                     <FamiliaMembro nome="Chris "/>
+
+                </Familia>
             </Card>
 
             <Card titulo="#04 - exemplo de card" color="blue">
