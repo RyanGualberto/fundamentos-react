@@ -1,21 +1,28 @@
 import React from "react";
 import produtos from "../../data/produtos";
-
+import './TabelaProdutos.css'
 export default props => {
-    const produtosLi = produtos.map((produto) => {
+    const prodRow = produtos.map((produto) => {
         return (
-            <li key={produto.id}>
-                {produto.id}) {produto.nome} -> {produto.preco}
-            </li>
+            <tr key={produto.id}>
+                <td>{produto.id} </td>
+                <td>{produto.nome}</td> 
+                <td>R$ {produto.preco}</td>
+            </tr>
         )
     })
     return (
         <div>
-            <ul style={{
-                listStyle: "none"
-            }}>
-               {produtosLi}
-            </ul>
+            <table className="table">
+                <thead>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Preco</th>
+                </thead>
+                <tbody>
+                  {prodRow}
+                </tbody>
+            </table>
         </div>
     )
 }
