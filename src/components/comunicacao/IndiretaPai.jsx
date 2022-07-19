@@ -6,18 +6,18 @@ export default props => {
     const [nome, setNome] = useState('?');
     const [idade, setIdade] = useState(0);
     const [nerd, setNerd] = useState(false);
-function fornecerInformacoes(nomeParam, idadeParam, nerdParam){
-    nome = nomeParam
-    idade = idadeParam
-    nerd = nerdParam
+function fornecerInformacoes(nome, idade, nerd){
+    setNome(nome) 
+    setIdade(idade) 
+    setNerd(nerd) 
     
     console.log(nome, idade, nerd);
 }
     return (
         <div>
             <div>
-                <span>{nome}</span>
-                <span>{idade}</span>
+                <span>{nome}</span><br/>
+                <span>{idade}</span><br/>
                 <span>{nerd ? 'verdadeiro' : 'falso'}</span>
             </div>
             <IndiretaFilho quandoclicar={fornecerInformacoes}></IndiretaFilho>
