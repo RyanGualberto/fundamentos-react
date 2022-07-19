@@ -1,5 +1,9 @@
 import React, {Component} from "react";
 import './Contador.css'
+
+import Display from "./Display";
+import PassoForm from "./PassoForm";
+import Botoes from "./Botoes";
 export default class Contador extends Component{
 
 
@@ -18,9 +22,9 @@ export default class Contador extends Component{
             })
         }
 
-        setPasso = (e) => {
+        setPasso = (novoPasso) => {
             this.setState({
-                passo: +e.target.value,
+                passo: novoPasso,
             })
         }
 
@@ -28,13 +32,9 @@ export default class Contador extends Component{
         return (
             <div className="Contador">
                 <h2>Contador</h2>
-                <h3>{this.state.numero}</h3>
-                <div>
-                    <label htmlFor="PassoInput">Passo:</label>
-                <input type="number" value={this.state.passo} onChange={this.setPasso}/>
-                </div>
-                <button onClick={this.inc}>+</button>
-                <button onClick={this.dec}>-</button>
+                <Display numero={this.state.numero}></Display>
+                <PassoForm passo={this.state.passo} setPasso={this.setPasso} />
+                <Botoes incrementar={this.inc} decrementar={this.dec} />
             </div>
         )
     }
