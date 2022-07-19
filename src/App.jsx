@@ -12,7 +12,7 @@ import ParOuImpar from './components/conditions/ParOuImpar'
 import UsuarioInfo from './components/conditions/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
-
+import Input from './components/formulario/Input'
 
 import './App.css'
 const tag = <h1>Fundamentos react</h1>;
@@ -22,7 +22,9 @@ export default props => {
         <div className='app'>
             { tag }
             <div className='card-group'>
-
+            <Card titulo="#11 - Componente Controlado (Input)" color="#34495e ">
+                <Input></Input>
+            </Card>
             <Card titulo="#10 - Comunicacao Indireta" color="#ef464e">
                 <IndiretaPai></IndiretaPai>
             </Card>
