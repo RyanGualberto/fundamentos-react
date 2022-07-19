@@ -14,6 +14,7 @@ import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega';
 
 import './App.css'
 const tag = <h1>Fundamentos react</h1>;
@@ -23,6 +24,9 @@ export default props => {
         <div className='app'>
             { tag }
             <div className='card-group'>
+            <Card titulo="#13 - Mega" color="#7b241c">
+                <Mega qtde={8}></Mega>
+            </Card>
             <Card titulo="#12 - Contador" color="#b7950b  ">
                 <Contador numeroInicial={15}></Contador>
             </Card>
